@@ -1,4 +1,4 @@
-use clap::{crate_name, AppSettings, Parser};
+use clap::{crate_name, Parser};
 use figment::{
     providers::{Format, Yaml},
     Figment,
@@ -11,12 +11,10 @@ use serde::Deserialize;
 use std::collections::BTreeMap;
 
 #[derive(Parser)]
-#[clap(author, version, about, long_about = None)]
-#[clap(global_setting(AppSettings::PropagateVersion))]
-#[clap(global_setting(AppSettings::UseLongFormatForHelpSubcommand))]
+#[clap(author, version, about, long_about = None, propagate_version = true)]
 struct Cli {
     /// Path to the config file
-    #[clap(parse(from_os_str))]
+    #[clap(value_parser)]
     #[clap(short, long, default_value = "/etc/noderole.yml")]
     config: std::path::PathBuf,
 

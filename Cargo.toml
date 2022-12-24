@@ -12,11 +12,11 @@ repository = "https://github.com/MerlinDMC/noderole"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = { version = "3.0", features = ["derive", "env", "cargo"] }
+clap = { version = "4.0", features = ["derive", "env", "cargo"] }
 figment = { version = "0.10", features = ["yaml"] }
-kube = { version = "0.67", features = ["client"] }
-k8s-openapi = { version = "0.14.0", features = ["v1_22"] }
+kube = { version = "0.77", features = ["client"] }
+k8s-openapi = { version = "0.16.0", features = ["v1_22"] }
 serde = { version = "1.0" }
-tokio = { version = "1.16", features = ["full"] }
+tokio = { version = "1.23", features = ["full"] }
 
 openssl = { version = "0.10", features = ["vendored"] }
