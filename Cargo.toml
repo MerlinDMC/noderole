@@ -1,6 +1,6 @@
 [package]
 name = "noderole"
-version = "0.3.0"
+version = "0.4.0"
 description = "Assign roles/labels to kubernetes nodes"
 edition = "2021"
 authors = [
