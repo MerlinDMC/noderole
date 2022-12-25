@@ -15,7 +15,7 @@ repository = "https://github.com/MerlinDMC/noderole"
 clap = { version = "4.0", features = ["derive", "env", "cargo"] }
 figment = { version = "0.10", features = ["yaml"] }
 kube = { version = "0.77", features = ["client"] }
-k8s-openapi = { version = "0.16.0", features = ["v1_22"] }
+k8s-openapi = { version = "0.16.0", features = ["v1_24"] }
 serde = { version = "1.0" }
 tokio = { version = "1.23", features = ["full"] }
 
